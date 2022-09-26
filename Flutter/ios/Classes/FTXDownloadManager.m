@@ -4,8 +4,8 @@
 #import "FTXPlayerEventSinkQueue.h"
 #import "FTXEvent.h"
 #import "FTXDownloadManager.h"
-#import <TXLiteAVSDK_Player/TXVodPreloadManager.h>
-#import <TXLiteAVSDK_Player/TXVodDownloadManager.h>
+#import <TXLiteAVSDK_Professional/TXVodPreloadManager.h>
+#import <TXLiteAVSDK_Professional/TXVodDownloadManager.h>
 #import "FTXEvent.h"
 #import "CommonUtil.h"
 

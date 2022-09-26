@@ -1,6 +1,6 @@
 // Copyright (c) 2022 Tencent. All rights reserved.
 
-#import <TXLiteAVSDK_Player/TXVodDownloadManager.h>
+#import <TXLiteAVSDK_Professional/TXVodDownloadManager.h>
 #import <Foundation/Foundation.h>
 #import "FTXEvent.h"
 
