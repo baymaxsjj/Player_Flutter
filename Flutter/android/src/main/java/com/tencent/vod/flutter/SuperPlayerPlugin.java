@@ -189,7 +189,11 @@ public class SuperPlayerPlugin implements FlutterPlugin, MethodCallHandler, Acti
         } else if (call.method.equals("getBrightness")) {
             Window window = mActivityPluginBinding.getActivity().getWindow();
             WindowManager.LayoutParams params = window.getAttributes();
-            result.success(params.screenBrightness);
+            Float screenBrightness=params.screenBrightness;
+            if(screenBrightness<0){
+                screenBrightness=Settings.System.getFloat(mActivityPluginBinding.getActivity().getContentResolver(), Settings.System.SCREEN_BRIGHTNESS,100)/255;
+            }
+            result.success(screenBrightness);
         } else if (call.method.equals("getSystemVolume")) {
             result.success(mTxAudioManager.getSystemCurrentVolume());
         } else if (call.method.equals("setSystemVolume")) {

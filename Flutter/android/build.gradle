@@ -35,4 +35,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation rootProject.ext.liteavSdk
+//    compileOnly files("D:/fvm/versions/3.3.2/bin/cache/artifacts/engine/android-arm/flutter.jar")
 }
